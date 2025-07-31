@@ -1,0 +1,166 @@
+body {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+}
+
+.quiz-container {
+    background-color: rgb(236, 238, 241);
+    padding: 20px;
+    width: 55vw;
+    margin: 30px auto;
+    border-radius: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    width: 95%;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+li {
+    background-color: rgb(208, 211, 215);
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+#question-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+button {
+    background-color: rgb(0, 132, 255);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    border-style: none;
+    outline: none;
+}
+button:disabled:hover{
+    background-color: rgb(97, 96, 96);
+}
+button:disabled{
+    background-color: gray;
+}
+
+button:hover {
+    background-color: rgb(7, 105, 197);
+}
+
+.correct-option {
+    color: white;
+    background-color: rgb(8, 230, 56);
+}
+
+.incorrect-option {
+    color: white;
+    background-color: rgb(233, 102, 76);
+}
+
+#score-message {
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(6, 180, 44);
+}
+
+#scoreboard {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+@media  screen and (min-width:1600px) {
+    body{
+        font-size: 40px;
+    }
+    button{
+        font-size: 30px;
+    }
+    #question-text{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    body{
+        font-size: 35px;
+    }
+    button{
+        font-size: 30px;
+    }
+    #question-text{
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    
+    body{
+        font-size: 32px;
+    }
+    .quiz-container{
+        width: 80vw;
+        box-sizing: border-box;
+    }
+    button{
+        font-size: 25px;
+    }
+    #question-text{
+        font-size: 32px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    body{
+        font-size: 29px;
+    }
+    .quiz-container{
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    button{
+        font-size: 21px;
+    }
+    #question-text{
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width: 479px){
+    body{
+        font-size: 20px;
+        
+    }
+    button{
+        font-size: 18px;
+    }
+    #question-text{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kbc_style.css">
+    <title>KBC</title>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h1>Quiz</h1>
+        </header>
+
+        <div id="quiz" class="quiz-content flex">
+            <div id="question-number" class="question-number"></div>
+            <div id="question-text" class="question-text"></div>
+
+            <ul id="options-list" class="options-list flex">
+
+            </ul>
+            <div id="btns" class="btns">
+                <button id="prev-btn" class="next-btn"> Prev Question </button>
+                <button id="next-btn" class="next-btn"> Next Question </button>
+            </div>
+        </div>
+
+        <div id="scoreboard" class="scoreboard hidden flex">
+            <h2>Quiz Completed...!</h2>
+            <p id="score-message" class="score-message"></p>
+            <button id="restart-btn" class="btn restart-btn">Restart Quiz</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>2025 &copy; All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
