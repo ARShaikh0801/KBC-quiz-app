@@ -269,7 +269,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 function initializeQuiz() {
-    questions = shuffleArry(questionPool).slice(0, totalQuestions);
+    questions = shuffleArray(questionPool).slice(0, totalQuestions);
     currentIndex = 0;
     score = 0;
     userAnswer = [];
@@ -375,46 +375,6 @@ function navigateToQuestion(direction) {
     }
 }
 
-function userAnswerQuestion() {
-    clearOptions();
-
-    const currentQuestion = questions[currentIndex];
-    questionNumberEl.textContent = `Question ${currentIndex + 1} of ${totalQuestions}`;
-    questionTextEl.textContent = currentQuestion.question;
-    currentQuestion.options.forEach((optionText, index) => {
-        const li = document.createElement('li');
-        li.textContent = optionText;
-        optionsListEl.appendChild(li)
-
-    });
-    if (currentIndex === 0) {
-        prevButton.disabled = true;
-    }
-    else {
-        prevButton.disabled = false;
-    }
-    const correctIndex = currentQuestion.correctIndex;
-    const optionsLi = optionsListEl.querySelectorAll("li");
-
-    optionsLi.forEach((li, index) => {
-        if (index === correctIndex) {
-            li.classList.add("correct-option");
-        }
-        if (index === userAnswer[currentIndex] && userAnswer[currentIndex] !== correctIndex) {
-            li.classList.add("incorrect-option");
-        }
-
-        li.style.pointerEvents = "none";
-    })
-    if (currentIndex === totalQuestions - 1) {
-        nextButton.textContent = "Finish";
-    }
-    else {
-        nextButton.textContent = "Next Question";
-    }
-    nextButton.disabled = false;
-}
-
 function endQuiz() {
     quiz.classList.add("hidden");
     scoreBoardEl.classList.remove("hidden");
@@ -425,7 +385,7 @@ restartButton.addEventListener("click", () => {
     initializeQuiz();
 })
 
-function shuffleArry(array) {
+function shuffleArray(array) {
     const arr = [...array];
     for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
