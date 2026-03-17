@@ -12,6 +12,13 @@
 
 ---
 
+<div align="center">
+  <h2>✨ Checkout Live Demo</h2>
+  
+  [![Live Demo](https://img.shields.io/badge/See_Live_Demo-4F46E5?style=for-the-badge&logo=github&logoColor=white)](https://arshaikh0801.github.io/KBC-quiz-app/)
+
+</div>
+
 ## 🚀 Overview
 
 **KBC Quiz Master** is an interactive web-based quiz application that challenges your general knowledge. It features a modern, clean UI design, smooth animations, and is fully responsive—delivering a fantastic user experience across desktop, tablet, and mobile devices!
@@ -89,4 +96,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 <div align="center">
   <b>Developed with ❤ by ARShaikh0801</b>
+
+  [GitHub](https://github.com/ARShaikh0801) • [LinkedIn](https://www.linkedin.com/in/shaikh-abdulrauf-asifparvez-b4485435a)
+
 </div>
