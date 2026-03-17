@@ -88,5 +88,5 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ---
 
 <div align="center">
-  <b>Developed by ARShaikh0801</b>
+  <b>Developed with ❤ by ARShaikh0801</b>
 </div>
