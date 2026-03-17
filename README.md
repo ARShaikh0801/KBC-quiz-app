@@ -96,7 +96,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 <div align="center">
   <b>Developed with ❤ by ARShaikh0801</b>
-
+  
   [GitHub](https://github.com/ARShaikh0801) • [LinkedIn](https://www.linkedin.com/in/shaikh-abdulrauf-asifparvez-b4485435a)
 
 </div>
